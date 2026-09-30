@@ -38,6 +38,12 @@ Violations get drawn as red outlines on a `Canvas` positioned over the real cont
 
 Toggle "Audit Mode" in the sample app: the three raw, toolkit-bypassing elements at the bottom of the screen (an icon button with no content description, a 24dp clickable box, and a raw clickable icon with no content description) get outlined in red. Everything built with `A11yButton`, `A11yCard`, and `A11yTextField` stays clean.
 
+
+
+https://github.com/user-attachments/assets/83a88835-06f0-40ae-9faf-2ac85c5b6ec3
+
+
+
 ## Metric
 
 `AccessibilityAuditTest` renders the real `SampleScreen` under Robolectric plus `compose-ui-test`, runs the exact production `findAccessibilityIssues` function against its real semantics tree, and asserts the result. It's the same code path the on-screen overlay uses, not a separate reimplementation.
