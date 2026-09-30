@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.A11yToolkitSample" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
